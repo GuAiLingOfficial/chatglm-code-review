@@ -27,7 +27,7 @@ jobs:
       - name: Build with Maven
         run: mvn clean install
 
-      - name: Copy openai-code-review-sdk JAR
+      - name: Copy chatglm-code-review-sdk JAR
         run: mvn dependency:copy -Dartifact=com.rsl.middleware:chatglm-code-review-sdk:1.0 -DoutputDirectory=./libs
 
       - name: Run Code Review
