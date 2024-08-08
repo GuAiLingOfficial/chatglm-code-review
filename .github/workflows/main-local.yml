@@ -3,10 +3,10 @@ name: Run Java Git Diff By Local
 on:
   push:
     branches:
-      - '*' #*代表推送任何分支都执行工作流
+      - master-close
   pull_request:
     branches:
-      - '*'
+      - master-close
 
 jobs:
   build-and-run:
