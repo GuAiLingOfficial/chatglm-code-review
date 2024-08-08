@@ -6,7 +6,7 @@ package com.rsl.middleware.sdk;
  * @ author: rsl
  * @ create: 2024-08-06 16:51
  **/
-public class ChatGlmCodeReview {
+public class ChatGlmCodeReview{
     public static void main(String[] args) {
         System.out.println("测试执行");
     }
