@@ -3,7 +3,7 @@ name: Run Java Git Diff By Local
 on:
   push:
     branches:
-      - master-close
+      - master-close #推送master-close分支时执行工作流，然而并不存在该分支，所以是用于控制CICD时执行哪个工作流
   pull_request:
     branches:
       - master-close
