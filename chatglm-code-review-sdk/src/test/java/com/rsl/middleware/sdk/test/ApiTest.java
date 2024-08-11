@@ -1,8 +1,7 @@
 package com.rsl.middleware.sdk.test;
 
 import com.alibaba.fastjson2.JSON;
-import com.rsl.middleware.sdk.domain.model.ChatCompletionSyncResponse;
-import com.rsl.middleware.sdk.domain.model.Message;
+import com.rsl.middleware.sdk.infrastructure.chatglm.dto.ChatCompletionSyncResponseDTO;
 import com.rsl.middleware.sdk.types.utils.BearerTokenUtils;
 import com.rsl.middleware.sdk.types.utils.WXAccessTokenUtils;
 import org.junit.Test;
@@ -77,7 +76,7 @@ public class ApiTest {
         in.close();
         connection.disconnect();
 
-        ChatCompletionSyncResponse response = JSON.parseObject(content.toString(), ChatCompletionSyncResponse.class);
+        ChatCompletionSyncResponseDTO response = JSON.parseObject(content.toString(), ChatCompletionSyncResponseDTO.class);
         System.out.println(response.getChoices().get(0).getMessage().getContent());
 
     }
@@ -94,6 +93,7 @@ public class ApiTest {
         String url = String.format("https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=%s", accessToken);
         sendPostRequest(url, JSON.toJSONString(message));
     }
+
 
     private static void sendPostRequest(String urlString, String jsonBody) {
         try {
@@ -117,6 +117,55 @@ public class ApiTest {
             e.printStackTrace();
         }
     }
+
+    public static class Message {
+        private String touser = "oLZcc6nU1py0vfnpJae8gjg0zZ7s";
+        private String template_id = "4oQk1VWTjAsHvUJ0TIo4kTVgNSh4UdtbtEI3arGS0jQ";
+        private String url = "https://github.com/GuAiLingOfficial/code-review-log/blob/main/2024-08-11/NlrrSETA04v8.md";
+        private Map<String, Map<String, String>> data = new HashMap<>();
+
+        public void put(String key, String value) {
+            data.put(key, new HashMap<String, String>() {
+                {
+                    put("value", value);
+                }
+            });
+        }
+
+        public String getTouser() {
+            return touser;
+        }
+
+        public void setTouser(String touser) {
+            this.touser = touser;
+        }
+
+        public String getTemplate_id() {
+            return template_id;
+        }
+
+        public void setTemplate_id(String template_id) {
+            this.template_id = template_id;
+        }
+
+        public String getUrl() {
+            return url;
+        }
+
+        public void setUrl(String url) {
+            this.url = url;
+        }
+
+        public Map<String, Map<String, String>> getData() {
+            return data;
+        }
+
+        public void setData(Map<String, Map<String, String>> data) {
+            this.data = data;
+        }
+    }
+
+
 
 
 

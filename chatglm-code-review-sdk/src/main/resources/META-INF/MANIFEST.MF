@@ -1,2 +1,2 @@
 Manifest-Version: 1.0
-Main-Class: com.rsl.middleware.sdk.ChatGlmCodeReview
+Main-Class: com.rsl.middleware.sdk.ChatGLMCodeReview

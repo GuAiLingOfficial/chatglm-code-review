@@ -1,4 +1,6 @@
-package com.rsl.middleware.sdk.domain.model;
+package com.rsl.middleware.sdk.infrastructure.chatglm.dto;
+
+import com.rsl.middleware.sdk.domain.model.Model;
 
 import java.util.List;
 
@@ -7,7 +9,7 @@ import java.util.List;
  * @ author: rsl
  * @ create: 2024-08-09 21:10
  **/
-public class ChatCompletionRequest {
+public class ChatCompletionRequestDTO {
 
     private String model = Model.GLM_4_FLASH.getCode();
     private List<Prompt> messages;

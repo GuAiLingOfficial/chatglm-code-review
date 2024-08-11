@@ -27,5 +27,5 @@ jobs:
       - name: Run Java code
         run: | 
           cd chatglm-code-review-sdk/src/main/java
-          javac com/rsl/middleware/sdk/ChatGlmCodeReview.java
-          java com.rsl.middleware.sdk.ChatGlmCodeReview #切换到对应目录，编译并允许对应java文件
+          javac com/rsl/middleware/sdk/ChatGLMCodeReview.java
+          java com.rsl.middleware.sdk.ChatGLMCodeReview #切换到对应目录，编译并允许对应java文件

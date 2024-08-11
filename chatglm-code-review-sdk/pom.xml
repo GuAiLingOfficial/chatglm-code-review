@@ -100,7 +100,7 @@
                     <archive>
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <mainClass>com.rsl.middleware.sdk.ChatGlmCodeReview</mainClass>
+                            <mainClass>com.rsl.middleware.sdk.ChatGLMCodeReview</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

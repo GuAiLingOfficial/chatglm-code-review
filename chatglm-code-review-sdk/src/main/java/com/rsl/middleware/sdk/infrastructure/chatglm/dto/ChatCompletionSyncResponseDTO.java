@@ -1,4 +1,4 @@
-package com.rsl.middleware.sdk.domain.model;
+package com.rsl.middleware.sdk.infrastructure.chatglm.dto;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import java.util.List;
  * @ author: rsl
  * @ create: 2024-08-09 21:09
  **/
-public class ChatCompletionSyncResponse {
+public class ChatCompletionSyncResponseDTO {
 
     private List<Choice> choices;
 
