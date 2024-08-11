@@ -30,8 +30,6 @@ jobs:
       - name: Download chatglm-code-review-sdk JAR
         run: wget -O ./libs/chatglm-code-review-sdk-1.0.jar https://github.com/GuAiLingOfficial/chatglm-code-review/releases/download/v1.0/chatglm-code-review-sdk-1.0.jar
 
-
-
       - name: Get repository name
         id: repo-name
         run: echo "REPO_NAME=${GITHUB_REPOSITORY##*/}" >> $GITHUB_ENV
