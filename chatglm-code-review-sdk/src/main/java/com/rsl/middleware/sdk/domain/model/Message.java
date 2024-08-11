@@ -10,9 +10,9 @@ import java.util.Map;
  **/
 public class Message {
 
-    private String touser = "or0Ab6ivwmypESVp_bYuk92T6SvU";
-    private String template_id = "GLlAM-Q4jdgsktdNd35hnEbHVam2mwsW2YWuxDhpQkU";
-    private String url = "https://weixin.qq.com";
+    private String touser = "oLZcc6nU1py0vfnpJae8gjg0zZ7s";
+    private String template_id = "4oQk1VWTjAsHvUJ0TIo4kTVgNSh4UdtbtEI3arGS0jQ";
+    private String url = "https://github.com/GuAiLingOfficial/code-review-log/blob/main/2024-08-11/NlrrSETA04v8.md";
     private Map<String, Map<String, String>> data = new HashMap<>();
 
     public void put(String key, String value) {
