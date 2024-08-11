@@ -118,7 +118,7 @@ public class ChatGlmCodeReview {
 
     private static String writeLog(String token, String log) throws Exception {
         Git git = Git.cloneRepository()
-                .setURI("https://github.com/GuAiLingOfficial/code-review-log")
+                .setURI("https://github.com/GuAiLingOfficial/code-review-log.git")
                 .setDirectory(new File("repo"))
                 .setCredentialsProvider(new UsernamePasswordCredentialsProvider(token, ""))
                 .call();
