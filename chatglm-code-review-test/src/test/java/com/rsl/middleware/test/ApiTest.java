@@ -18,6 +18,6 @@ public class ApiTest {
 
     @Test
     public void test() {
-        System.out.println(Integer.parseInt("dddd"));
+        System.out.println(Integer.parseInt("1234"));
     }
 }
